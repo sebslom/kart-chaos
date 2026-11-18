@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "definition": {
+    "id": "skyline_crossroads",
+    "name": "Skyline Crossroads",
+    "subtitle": "Cztery podniebne wyspy połączone mostami nad przepaścią",
+    "waterY": -8.0,
+    "abyssDeathY": -6.5,
+    "platforms": [
+      { "id": "center_hub", "minX": -18, "maxX": 18, "minZ": -18, "maxZ": 18, "topY": 1.5, "thickness": 2.0, "kind": "deck" },
+      { "id": "arm_n", "minX": -7, "maxX": 7, "minZ": -44, "maxZ": -24, "topY": 0, "thickness": 1.6, "kind": "bridge" },
+      { "id": "arm_s", "minX": -7, "maxX": 7, "minZ": 24, "maxZ": 44, "topY": 0, "thickness": 1.6, "kind": "bridge" },
+      { "id": "arm_w", "minX": -44, "maxX": -24, "minZ": -7, "maxZ": 7, "topY": 0, "thickness": 1.6, "kind": "bridge" },
+      { "id": "arm_e", "minX": 24, "maxX": 44, "minZ": -7, "maxZ": 7, "topY": 0, "thickness": 1.6, "kind": "bridge" },
+      { "id": "isl_n", "minX": -16, "maxX": 16, "minZ": -58, "maxZ": -42, "topY": 0, "thickness": 2.0, "kind": "island" },
+      { "id": "isl_s", "minX": -16, "maxX": 16, "minZ": 42, "maxZ": 58, "topY": 0, "thickness": 2.0, "kind": "island" },
+      { "id": "isl_w", "minX": -58, "maxX": -42, "minZ": -16, "maxZ": 16, "topY": 0, "thickness": 2.0, "kind": "island" },
+      { "id": "isl_e", "minX": 42, "maxX": 58, "minZ": -16, "maxZ": 16, "topY": 0, "thickness": 2.0, "kind": "island" }
+    ],
+    "cutouts": [],
+    "ramps": [
+      { "id": "cross_rn", "minX": -7, "maxX": 7, "minZ": -24, "maxZ": -18, "lowY": 0, "highY": 1.5, "slopeDir": "posZ" },
+      { "id": "cross_rs", "minX": -7, "maxX": 7, "minZ": 18, "maxZ": 24, "lowY": 0, "highY": 1.5, "slopeDir": "negZ" },
+      { "id": "cross_rw", "minX": -24, "maxX": -18, "minZ": -7, "maxZ": 7, "lowY": 0, "highY": 1.5, "slopeDir": "posX" },
+      { "id": "cross_re", "minX": 18, "maxX": 24, "minZ": -7, "maxZ": 7, "lowY": 0, "highY": 1.5, "slopeDir": "negX" }
+    ],
+    "obstacles": [
+      { "id": "hub_ob_1", "x": -9, "z": -9, "baseY": 1.5, "halfW": 1.8, "halfD": 1.8, "height": 3.0, "kind": "pillar" },
+      { "id": "hub_ob_2", "x": 9, "z": 9, "baseY": 1.5, "halfW": 1.8, "halfD": 1.8, "height": 3.0, "kind": "pillar" }
+    ],
+    "boostPads": [
+      { "x": 0, "y": 0.05, "z": -34, "radius": 2.8, "yaw": 0 },
+      { "x": 0, "y": 0.05, "z": 34, "radius": 2.8, "yaw": 3.141592653589793 },
+      { "x": -34, "y": 0.05, "z": 0, "radius": 2.8, "yaw": 1.5707963267948966 },
+      { "x": 34, "y": 0.05, "z": 0, "radius": 2.8, "yaw": -1.5707963267948966 }
+    ],
+    "crateSpots": [
+      { "x": 0, "y": 1.5, "z": 0 },
+      { "x": -10, "y": 1.5, "z": 10 },
+      { "x": 10, "y": 1.5, "z": -10 },
+      { "x": 0, "y": 0, "z": -50 },
+      { "x": 0, "y": 0, "z": 50 },
+      { "x": -50, "y": 0, "z": 0 },
+      { "x": 50, "y": 0, "z": 0 }
+    ],
+    "spawns": [
+      { "x": -8, "y": 0.1, "z": -50, "yaw": 0, "team": "red" },
+      { "x": 8, "y": 0.1, "z": -50, "yaw": 0, "team": "red" },
+      { "x": -50, "y": 0.1, "z": -8, "yaw": 1.5707963267948966, "team": "red" },
+      { "x": -50, "y": 0.1, "z": 8, "yaw": 1.5707963267948966, "team": "red" },
+      { "x": -8, "y": 0.1, "z": 50, "yaw": 3.141592653589793, "team": "blue" },
+      { "x": 8, "y": 0.1, "z": 50, "yaw": 3.141592653589793, "team": "blue" },
+      { "x": 50, "y": 0.1, "z": -8, "yaw": -1.5707963267948966, "team": "blue" },
+      { "x": 50, "y": 0.1, "z": 8, "yaw": -1.5707963267948966, "team": "blue" }
+    ],
+    "flags": {
+      "red": { "x": 0, "y": 0, "z": -52 },
+      "blue": { "x": 0, "y": 0, "z": 52 }
+    },
+    "waypoints": [
+      { "x": 0, "y": 1.5, "z": 0 },
+      { "x": 0, "y": 0, "z": -48 },
+      { "x": 0, "y": 0, "z": 48 },
+      { "x": -48, "y": 0, "z": 0 },
+      { "x": 48, "y": 0, "z": 0 }
+    ],
+    "checkpointSpots": [
+      { "x": 0, "y": 1.5, "z": 0 },
+      { "x": 0, "y": 0, "z": -50 },
+      { "x": 50, "y": 0, "z": 0 },
+      { "x": 0, "y": 0, "z": 50 },
+      { "x": -50, "y": 0, "z": 0 },
+      { "x": -12, "y": 1.5, "z": -12 },
+      { "x": 12, "y": 1.5, "z": 12 }
+    ]
+  },
+  "powerupConfig": {
+    "crateRespawnSeconds": 8,
+    "powerMultiplier": 1,
+    "shieldDuration": 6,
+    "freezeDuration": 3.5,
+    "oilDuration": 12,
+    "sentryDuration": 18
+  }
+}

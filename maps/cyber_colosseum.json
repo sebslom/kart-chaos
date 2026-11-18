@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "definition": {
+    "id": "cyber_colosseum",
+    "name": "Cyber Colosseum",
+    "subtitle": "Symetryczna arena gladiatorów z podestem centralnym i 4 boostami",
+    "waterY": -7.0,
+    "abyssDeathY": -5.5,
+    "platforms": [
+      { "id": "colosseum_floor", "minX": -48, "maxX": 48, "minZ": -48, "maxZ": 48, "topY": 0, "thickness": 2.2, "kind": "deck" },
+      { "id": "center_podium", "minX": -12, "maxX": 12, "minZ": -12, "maxZ": 12, "topY": 2.8, "thickness": 1.4, "kind": "bridge" }
+    ],
+    "cutouts": [
+      { "minX": 36, "maxX": 50, "minZ": 36, "maxZ": 50, "maxY": 1.0 },
+      { "minX": -50, "maxX": -36, "minZ": 36, "maxZ": 50, "maxY": 1.0 },
+      { "minX": 36, "maxX": 50, "minZ": -50, "maxZ": -36, "maxY": 1.0 },
+      { "minX": -50, "maxX": -36, "minZ": -50, "maxZ": -36, "maxY": 1.0 }
+    ],
+    "ramps": [
+      { "id": "col_rn", "minX": -5, "maxX": 5, "minZ": -24, "maxZ": -12, "lowY": 0, "highY": 2.8, "slopeDir": "posZ" },
+      { "id": "col_rs", "minX": -5, "maxX": 5, "minZ": 12, "maxZ": 24, "lowY": 0, "highY": 2.8, "slopeDir": "negZ" }
+    ],
+    "obstacles": [
+      { "id": "col_pil_w", "x": -22, "z": 0, "baseY": 0, "halfW": 2.0, "halfD": 5.0, "height": 4.2, "kind": "barrier" },
+      { "id": "col_pil_e", "x": 22, "z": 0, "baseY": 0, "halfW": 2.0, "halfD": 5.0, "height": 4.2, "kind": "barrier" },
+      { "id": "col_pil_nw", "x": -18, "z": -24, "baseY": 0, "halfW": 2.0, "halfD": 2.0, "height": 4.5, "kind": "pillar" },
+      { "id": "col_pil_se", "x": 18, "z": 24, "baseY": 0, "halfW": 2.0, "halfD": 2.0, "height": 4.5, "kind": "pillar" }
+    ],
+    "boostPads": [
+      { "x": -32, "y": 0.05, "z": 0, "radius": 3.0, "yaw": 0 },
+      { "x": 32, "y": 0.05, "z": 0, "radius": 3.0, "yaw": 3.141592653589793 },
+      { "x": 0, "y": 0.05, "z": -34, "radius": 3.0, "yaw": 0 },
+      { "x": 0, "y": 0.05, "z": 34, "radius": 3.0, "yaw": 3.141592653589793 }
+    ],
+    "crateSpots": [
+      { "x": 0, "y": 2.8, "z": 0 },
+      { "x": -34, "y": 0, "z": -16 },
+      { "x": 34, "y": 0, "z": 16 },
+      { "x": -34, "y": 0, "z": 16 },
+      { "x": 34, "y": 0, "z": -16 },
+      { "x": 0, "y": 0, "z": -38 },
+      { "x": 0, "y": 0, "z": 38 }
+    ],
+    "spawns": [
+      { "x": -10, "y": 0.1, "z": -40, "yaw": 0, "team": "red" },
+      { "x": 10, "y": 0.1, "z": -40, "yaw": 0, "team": "red" },
+      { "x": -30, "y": 0.1, "z": -28, "yaw": 0.7853981633974483, "team": "red" },
+      { "x": 30, "y": 0.1, "z": -28, "yaw": -0.7853981633974483, "team": "red" },
+      { "x": -10, "y": 0.1, "z": 40, "yaw": 3.141592653589793, "team": "blue" },
+      { "x": 10, "y": 0.1, "z": 40, "yaw": 3.141592653589793, "team": "blue" },
+      { "x": -30, "y": 0.1, "z": 28, "yaw": 2.356194490192345, "team": "blue" },
+      { "x": 30, "y": 0.1, "z": 28, "yaw": -2.356194490192345, "team": "blue" }
+    ],
+    "flags": {
+      "red": { "x": 0, "y": 0, "z": -42 },
+      "blue": { "x": 0, "y": 0, "z": 42 }
+    },
+    "waypoints": [
+      { "x": -32, "y": 0, "z": -20 },
+      { "x": -32, "y": 0, "z": 20 },
+      { "x": 0, "y": 0, "z": 34 },
+      { "x": 32, "y": 0, "z": 20 },
+      { "x": 32, "y": 0, "z": -20 },
+      { "x": 0, "y": 0, "z": -34 },
+      { "x": 0, "y": 2.8, "z": 0 }
+    ],
+    "checkpointSpots": [
+      { "x": 0, "y": 2.8, "z": 0 },
+      { "x": -34, "y": 0, "z": 0 },
+      { "x": 34, "y": 0, "z": 0 },
+      { "x": 0, "y": 0, "z": -36 },
+      { "x": 0, "y": 0, "z": 36 }
+    ]
+  },
+  "powerupConfig": {
+    "crateRespawnSeconds": 7,
+    "powerMultiplier": 1,
+    "shieldDuration": 6,
+    "freezeDuration": 3.5,
+    "oilDuration": 12,
+    "sentryDuration": 18
+  }
+}

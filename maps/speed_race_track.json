@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "definition": {
+    "id": "speed_race_track",
+    "name": "Speed Race Track",
+    "subtitle": "Klasyczna pętla wyścigowa nad oceanem z ostrymi zakrętami",
+    "waterY": -6.5,
+    "abyssDeathY": -5.0,
+    "platforms": [
+      {
+        "id": "track_loop",
+        "minX": -56,
+        "maxX": 56,
+        "minZ": -42,
+        "maxZ": 42,
+        "topY": 0,
+        "thickness": 2.0,
+        "kind": "track"
+      },
+      {
+        "id": "north_overpass",
+        "minX": -10,
+        "maxX": 10,
+        "minZ": -42,
+        "maxZ": -20,
+        "topY": 2.2,
+        "thickness": 1.0,
+        "kind": "bridge"
+      }
+    ],
+    "cutouts": [
+      { "minX": -28, "maxX": 28, "minZ": -16, "maxZ": 16, "maxY": 5.0 },
+      { "minX": 44, "maxX": 58, "minZ": 30, "maxZ": 44, "maxY": 5.0 },
+      { "minX": -58, "maxX": -44, "minZ": 30, "maxZ": 44, "maxY": 5.0 },
+      { "minX": 44, "maxX": 58, "minZ": -44, "maxZ": -30, "maxY": 5.0 },
+      { "minX": -58, "maxX": -44, "minZ": -44, "maxZ": -30, "maxY": 5.0 }
+    ],
+    "ramps": [
+      { "id": "trk_ramp_w", "minX": -22, "maxX": -10, "minZ": -41, "maxZ": -21, "lowY": 0, "highY": 2.2, "slopeDir": "posX" },
+      { "id": "trk_ramp_e", "minX": 10, "maxX": 22, "minZ": -41, "maxZ": -21, "lowY": 0, "highY": 2.2, "slopeDir": "negX" }
+    ],
+    "obstacles": [
+      { "id": "chicane_1", "x": -34, "z": 0, "baseY": 0, "halfW": 1.6, "halfD": 3.0, "height": 2.2, "kind": "barrier" },
+      { "id": "chicane_2", "x": 34, "z": 0, "baseY": 0, "halfW": 1.6, "halfD": 3.0, "height": 2.2, "kind": "barrier" }
+    ],
+    "boostPads": [
+      { "x": 0, "y": 0.05, "z": 29, "radius": 3.2, "yaw": -1.5707963267948966 },
+      { "x": -42, "y": 0.05, "z": 0, "radius": 2.8, "yaw": 0 },
+      { "x": 42, "y": 0.05, "z": 0, "radius": 2.8, "yaw": 3.141592653589793 }
+    ],
+    "crateSpots": [
+      { "x": 0, "y": 2.2, "z": -31 },
+      { "x": 0, "y": 0, "z": 29 },
+      { "x": -44, "y": 0, "z": -16 },
+      { "x": -44, "y": 0, "z": 16 },
+      { "x": 44, "y": 0, "z": -16 },
+      { "x": 44, "y": 0, "z": 16 }
+    ],
+    "spawns": [
+      { "x": -16, "y": 0.1, "z": 26, "yaw": -1.5707963267948966, "team": "red" },
+      { "x": -24, "y": 0.1, "z": 33, "yaw": -1.5707963267948966, "team": "red" },
+      { "x": -32, "y": 0.1, "z": 26, "yaw": -1.5707963267948966, "team": "red" },
+      { "x": -38, "y": 0.1, "z": 20, "yaw": 0, "team": "red" },
+      { "x": 16, "y": 0.1, "z": 26, "yaw": 1.5707963267948966, "team": "blue" },
+      { "x": 24, "y": 0.1, "z": 33, "yaw": 1.5707963267948966, "team": "blue" },
+      { "x": 32, "y": 0.1, "z": 26, "yaw": 1.5707963267948966, "team": "blue" },
+      { "x": 38, "y": 0.1, "z": 20, "yaw": 3.141592653589793, "team": "blue" }
+    ],
+    "flags": {
+      "red": { "x": -42, "y": 0, "z": 0 },
+      "blue": { "x": 42, "y": 0, "z": 0 }
+    },
+    "waypoints": [
+      { "x": 28, "y": 0, "z": 28 },
+      { "x": 42, "y": 0, "z": 14 },
+      { "x": 42, "y": 0, "z": -16 },
+      { "x": 28, "y": 0, "z": -30 },
+      { "x": 0, "y": 2.2, "z": -30 },
+      { "x": -28, "y": 0, "z": -30 },
+      { "x": -42, "y": 0, "z": -16 },
+      { "x": -42, "y": 0, "z": 14 },
+      { "x": -28, "y": 0, "z": 28 },
+      { "x": 0, "y": 0, "z": 28 }
+    ],
+    "checkpointSpots": [
+      { "x": 0, "y": 2.2, "z": -30 },
+      { "x": 36, "y": 0, "z": -24 },
+      { "x": 42, "y": 0, "z": 14 },
+      { "x": 22, "y": 0, "z": 29 },
+      { "x": -16, "y": 0, "z": 29 },
+      { "x": -42, "y": 0, "z": 14 },
+      { "x": -42, "y": 0, "z": -18 },
+      { "x": -28, "y": 0, "z": -30 }
+    ]
+  },
+  "powerupConfig": {
+    "crateRespawnSeconds": 8,
+    "powerMultiplier": 1,
+    "shieldDuration": 6,
+    "freezeDuration": 3.5,
+    "oilDuration": 12,
+    "sentryDuration": 18
+  }
+}
